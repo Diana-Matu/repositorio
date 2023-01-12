@@ -3,8 +3,8 @@
  * Suma
  */
 
- package operaciones;
-public class Suma {
+package operaciones;
+ public class Suma {
     private int x;
     private double y;
     /*
@@ -18,6 +18,7 @@ public class Suma {
     }
     /*
      * funcion que realiza la operacion
+     * @return z double
      */
     public double operacionSuma (){
         x=1;

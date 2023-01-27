@@ -30,9 +30,8 @@ import java.util.Arrays;
     public static int positivos (int arreglo[]){
         int positivo = 0;
         for(int i = 0; i < arreglo.length; i++) {
-            if (arreglo[i]>0) {
-                positivo += arreglo[i];
-            }
+            if (arreglo[i]>0) 
+                positivo ++;
         }
         return positivo;
     }
@@ -43,10 +42,9 @@ import java.util.Arrays;
      */
     public static int negativos (int arreglo[]){
         int negativo = 0;
-        for(int i = 0; i < arreglo.length; i++) {
-            if (arreglo[i]>0) {
-                negativo += arreglo[i];
-            }
+        for(int i = 0; i<arreglo.length; i++){
+            if(arreglo[i]<0) 
+            negativo++;
         }
         return negativo;
     }
@@ -58,16 +56,17 @@ import java.util.Arrays;
     public static int cero (int arreglo[]){
         int cero = 0;
         for(int i = 0; i < arreglo.length; i++) {
-            if (arreglo[i]>0) {
-                cero += arreglo[i];
+            if (arreglo[i]==0) {
+                cero ++;
             }
         }
         return cero;
     }
     public static void main (String args[]){
-        System.out.println(Arrays.toString(arreglo()));
-        System.out.println("La cantidad de numeros positivos es: " + positivos(new int[10]));
-        System.out.println("La cantidad de numeros negativos es: " + negativos(new int[10]));
-        System.out.println("La cantidad ceros es: " + cero(new int[10]));
+        int numeros[] = arreglo();
+        System.out.println(Arrays.toString(numeros));
+        System.out.println("La cantidad de numeros positivos es: " + positivos(numeros));
+        System.out.println("La cantidad de numeros negativos es: " + negativos(numeros));
+        System.out.println("La cantidad de ceros es: " + cero(numeros));
     }
  }

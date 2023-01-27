@@ -36,7 +36,8 @@ import java.util.Arrays;
         return medPar;
     }
     public static void main (String args []){
-        System.out.println(Arrays.toString(arreglo()));
-        System.out.println("Media de posiciones pares " + mediaPares(new int[10]));
+        int numeros[] = arreglo();
+        System.out.println(Arrays.toString(numeros));
+        System.out.println("Media de posiciones pares " + mediaPares(numeros));
     }
  }
